@@ -15,8 +15,8 @@
 }
 
 .colorDark(){
-    background-color: @bgLight;
-    color: @fontDark;
+    background-color: @bgDark;
+    color: @bgLight;
 }
 .colorLight(){
     background-color: @bgLight;
@@ -24,6 +24,7 @@
 }
 .flex(@dir,@side){
     display: flex;
+    margin: 0px 10px;
     flex-direction: @dir;
     justify-content: @side;
 }
@@ -49,7 +50,7 @@ header{
     .flex(row, space-between);
     .colorDark();
     padding: @indentV @indent;
-    position: sticky;
+    position: fixed;
     left: 0;
     right: 0;
     z-index: 100;
